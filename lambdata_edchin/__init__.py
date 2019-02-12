@@ -1,4 +1,4 @@
-VERSION=1.0
+VERSION=1.3
 
 import pandas as pd
 
@@ -9,7 +9,7 @@ def variance(numbers):
   # calculate variance using a list comprehension
   return sum((x - me_an) ** 2 for x in numbers) / len(numbers)
 
-def create_submission(pred_array,x_test_df,dest_url):
+def create_kaggle_submission(pred_array,x_test_df,dest_url):
   pred_df=pd.DataFrame(pred_array,columns=['status_group'])
   ids=pd.DataFrame(x_test_df.id,columns=['id'])
   ids = ids.astype('int32')

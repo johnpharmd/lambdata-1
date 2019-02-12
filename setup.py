@@ -14,7 +14,7 @@ with open('README.md','r') as fh:
   LONG_DESCRIPTION = fh.read()
 
 setuptools.setup(
-    name='lambdata-edc',
+    name='lambdata-edchin',
     version='1.0.0' ,
     author='Ed Chin',
     description="utility library",

@@ -7,7 +7,7 @@ def variance(results):
   # calculate mean
   m = sum(results) / len(results)
   # calculate variance using a list comprehension
-  return sum((xi - m) ** 2 for xi in results) / len(results)
+  return sum((x - m) ** 2 for x in results) / len(results)
 
 def create_submission(pred_array,X_test_df,dest_url):
   pred_df=pd.DataFrame(pred_array,columns=['status_group'])

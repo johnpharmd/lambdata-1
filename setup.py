@@ -11,7 +11,7 @@ with open('README.md','r') as fh:
 
 setuptools.setup(
     name='lambdata-edc',
-    version='1.2.0',
+    version='1.5.0',
     author='Ed Chin',
     description="utility library",
     long_description=LONG_DESCRIPTION,

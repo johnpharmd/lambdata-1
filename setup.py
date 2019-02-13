@@ -8,7 +8,7 @@ import setuptools
 REQUIRED = [
     'numpy',
     'pandas',
-    'sklearn.model_selection'
+    'sklearn'
     ]
 
 with open('README.md','r') as fh:
@@ -16,7 +16,7 @@ with open('README.md','r') as fh:
 
 setuptools.setup(
     name='lambdata-edchin',
-    version='1.5.0' ,
+    version='1.5.3' ,
     author='Ed Chin',
     description="utility library",
     long_description=LONG_DESCRIPTION,

@@ -1,11 +1,6 @@
-VERSION=1.5
-
-import pandas as pd
-import pyxlib as px
-
-#___ Variance:average of the squared differences from the mean____
-def variance(numbers):
-    #___ calculate mean________________
-    me_an=sum(numbers) / len(numbers)
-    #____calculate variance using a list comprehension__________
-    return sum((x - me_an) ** 2 for x in numbers) / len(numbers)
+VERSION='1.5.3'
+import pandas
+from sklearn.model_selection import train_test_split
+from . import variance
+from . import create_kaggle_submission
+from . import train_val_test_split

@@ -1,13 +1,14 @@
 #!/usr/bin/env python
 """ 
-  Package setup/installation for lambdata_edc
+  Package setup/installation for lambdata_edchin
 """
 
 import setuptools
 
 REQUIRED = [
     'numpy',
-    'pandas'
+    'pandas',
+    'sklearn.model_selection'
     ]
 
 with open('README.md','r') as fh:
@@ -15,7 +16,7 @@ with open('README.md','r') as fh:
 
 setuptools.setup(
     name='lambdata-edchin',
-    version='1.3.0' ,
+    version='1.5.0' ,
     author='Ed Chin',
     description="utility library",
     long_description=LONG_DESCRIPTION,
